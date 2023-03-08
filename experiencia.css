@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway&display=swap');
+
+:root {
+    --cor-primaria: #4650BD;
+    --cor-secundaria: #ffffff;
+    --cor--terciaria: #008364;
+    --cor-sombra: #000000;
+    --cor-hover: #606ADA;
+    --cor-fundo: linear-gradient(#304968 0%,
+    #36C1A0 52.6%,
+    #4650BD 100%);
+
+    --fonte-primaria: 'Calistoga', cursive;
+    --fonte-secundaria: 'Raleway', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background: var(--cor-fundo);
+    overflow-x: hidden;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-bottom: 4rem;
+}
+
+.apresentacao__secao {
+    position: relative;
+    height: 407px;
+    width: 100%;
+    padding-top: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao__secao::before {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/summer.png");
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 40%;
+    position: absolute;
+}
+
+.apresentacao__secao__titulo {
+    position: relative;
+    color: var(--cor-secundaria);
+    font-weight: 400;
+    font-size: 4rem;
+    font-family: var(--fonte-primaria);
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+}
+
+.experiencia__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.experiencia__box__paragrafo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.experiencia__box__paragrafo__titulo {
+    width: 70%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.experiencia__box__paragrafo__texto {
+    width: auto;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.imagem__box {
+    width: 40%;
+}
+
+@media (max-width: 960px) {
+    .experiencia__box:nth-child(1) {
+        flex-direction: column;
+    }
+
+    .experiencia__box:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .experiencia__box:nth-child(3) {
+        flex-direction: column;
+    }
+
+    .experiencia__box__paragrafo {
+        width: auto;
+        padding: 5%;
+    }
+} 
