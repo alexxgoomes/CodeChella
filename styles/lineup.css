@@ -133,8 +133,16 @@
     gap: 56px;
 }
 
-.guitarra {
-   mix-blend-mode: multiply;
-   width: 100%;
-   padding-top: 5%;
+@media (max-width: 768px) {
+    .line-up__subtitulo__texto {
+        width: 56%;
+    }
+
+    .line-up__bandas2 {
+        flex-wrap: wrap;
+    }
+
+    .linha {
+        width: 5.25rem;
+    }
 }
