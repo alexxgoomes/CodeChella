@@ -14,10 +14,13 @@
     --fonte-secundaria: 'Raleway', sans-serif;
 }
 
+* {
+    margin: 0;
+}
+
 body {
     box-sizing: border-box;
     background: var(--cor-fundo);
-    overflow-x: hidden;
 }
 
 .apresentacao {
@@ -30,7 +33,7 @@ body {
 .apresentacao__secao {
     position: relative;
     height: 407px;
-    width: 100%;
+    width: auto;
     padding-top: 9%;
     display: flex;
     flex-direction: column;
@@ -101,7 +104,19 @@ body {
     width: 40%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
+    .apresentacao__secao {
+        padding-top: 25%;
+    }
+
+    .experiencia{
+        gap: 64px;
+    }
+    
+    .experiencia__box {
+        gap: 32px;
+    }
+
     .experiencia__box:nth-child(1) {
         flex-direction: column;
     }
@@ -115,7 +130,10 @@ body {
     }
 
     .experiencia__box__paragrafo {
-        width: auto;
-        padding: 5%;
+        width: 80%;
+    }
+
+    .imagem__box {
+        width: 80%;
     }
 } 
