@@ -14,19 +14,14 @@
     --fonte-secundaria: 'Raleway', sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .body{
     box-sizing: border-box;
 }
 .cabecalho {
     position: fixed;
+    top: 0;
     z-index: 1;
-    width: 100%;
-    padding: 2% 7%;
+    padding: 2% 10%;
     left: 0;
     right: 0;
     background: var(--cor-primaria);
@@ -36,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: auto;
 }
 
 .menu__lista{
@@ -54,20 +49,23 @@
 }
 
 .rodape {
-    padding: 2% 0 0 7%;
+    padding: 2% 7%;
     width: 100%;
     background: var(--cor-primaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .rodape__menu {
     display: flex;
     flex-direction: column;
+    width: 30%;
     gap: 8px;
 }
 
 .rodape__lista {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 8px;
 }
@@ -79,15 +77,10 @@
     font-family: var(--fonte-secundaria);
 }
 
-.rodape__mensagem{
+.rodape__mensagem {
+    width: 35%;
     display: flex;
     flex-direction: column;
-}
-
-.rodape__conteudo {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
 }
 
 .rodape__mensagem__texto{
@@ -97,12 +90,42 @@
     font-family: var(--fonte-secundaria);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
     .cabecalho__menu{
+        flex-direction: column;
+        gap: 32px;
+        padding-bottom: 2%;
+    }
+
+    .menu__lista {
+        justify-content: space-around;
+        padding: 0%;
+        width: 100%;
+    }
+
+    .rodape {
         width: auto;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 32px;
-        padding: 1%;
+    }
+
+    .rodape__menu {
+        justify-content: center;
+        gap: 28px;
+        width: 50%;
+    } 
+
+    .rodape__link {
+        text-align: center;
+    }
+
+    .rodape__mensagem {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        padding-bottom: 0.5rem;
     }
 }
