@@ -79,6 +79,7 @@
 }
 
 .line-up__bandas {
+    width: auto;
     display: flex;
     flex-direction: column;
     gap: 32px;
