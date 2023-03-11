@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway&display=swap');
+
+.apresentacao__secao::before {
+    background-image: url("../assets/ingressos.png");
+    opacity: 40%;
+    background-position: top;
+}
