@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway&display=swap');
+
+.apresentacao__secao::before {
+    background-image: url("../assets/informacoes.png");
+    opacity: 40%;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+}
+
+.informacoes__titulo {
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.informacoes__accordion {
+    text-align: left;
+    transition: 0.4s;
+    padding: 1%;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.informacoes__accordion:hover {
+    background-color: var(--cor-hover);
+}
+
+.informacoes__painel {
+    display: flex;
+    justify-content: center;
+    padding: 1% 2.5%;
+    width: 75%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--cor-informacoes);
+    background-color: var(--cor-fundo-informacoes);
+    font-family: var(--fonte-secundaria);
+}
