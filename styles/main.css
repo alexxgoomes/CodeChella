@@ -6,6 +6,8 @@
     --cor--terciaria: #008364;
     --cor-sombra: #000000;
     --cor-hover: #606ADA;
+    --cor-informacoes: #444444;
+    --cor-fundo-informacoes: #C8DEEF;
     --cor-fundo: linear-gradient(#304968 0%,
     #36C1A0 52.6%,
     #4650BD 100%);
@@ -54,6 +56,7 @@ body {
 
 .apresentacao__secao__titulo {
     position: relative;
+    text-align: center;
     color: var(--cor-secundaria);
     font-weight: 400;
     font-size: 4rem;
