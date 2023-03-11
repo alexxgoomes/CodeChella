@@ -1,29 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway&display=swap');
 
-:root {
-    --cor-primaria: #4650BD;
-    --cor-secundaria: #ffffff;
-    --cor--terciaria: #008364;
-    --cor-sombra: #000000;
-    --cor-hover: #606ADA;
-    --cor-fundo: linear-gradient(#304968 0%,
-    #36C1A0 52.6%,
-    #4650BD 100%);
-
-    --fonte-primaria: 'Calistoga', cursive;
-    --fonte-secundaria: 'Raleway', sans-serif;
-}
-
-* {
-    margin: 0;
-}
-
-body {
-    box-sizing: border-box;
-    overflow-x: hidden;
-    background: var(--cor-fundo);
-}
-
 .apresentacao {
     display: flex;
     flex-direction: column;
@@ -31,36 +7,9 @@ body {
     padding-bottom: 4rem;
 }
 
-.apresentacao__secao {
-    position: relative;
-    height: 407px;
-    width: auto;
-    padding-top: 9%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .apresentacao__secao::before {
-    content: "";
-    background-size: cover;
-    background-position: center;
     background-image: url("../assets/setores.png");
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
     opacity: 40%;
-    position: absolute;
-}
-
-.apresentacao__secao__titulo {
-    position: relative;
-    color: var(--cor-secundaria);
-    font-weight: 400;
-    font-size: 4rem;
-    font-family: var(--fonte-primaria);
 }
 
 .setores{
@@ -101,9 +50,7 @@ body {
 }
 
 .titulo__detalhes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--cor-secundaria);
