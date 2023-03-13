@@ -1,7 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway&display=swap');
-
 .apresentacao__secao::before {
     background-image: url("../assets/ingressos.png");
     opacity: 40%;
     background-position: top;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:48px ;
+    padding: 2% 0%;
+}
+
+.formulario__titulo{
+    width: 60%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.formulario__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    gap: 32px;
+}
+
+.formulario__area__titulo {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.formulario__area__campo {
+    width: 100%;
+    padding: 1% 0%;
+    border-style: none;
+}
+
+.formulario__flex {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.formulario__flex__column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.formulario__area__campo1 {
+    width: 100%;
+    padding: 2% 0%;
+    border-style: none;
+}
+
+.avancar {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 1.5%;
+    box-shadow: 4px 4px var(--cor-sombra);
+    width: 20%;
+    height: 56px;
+    text-align: start;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    border-radius: 16px;
+    font-family: var(--fonte-secundaria);
+}
+
+.avancar:hover {
+    background-color: var(--cor-hover);
+}
+
+@media (max-width: 768px) {
+    .formulario__area {
+        width: 80%;
+    }
+
+    .formulario__flex {
+        flex-direction: column;
+    }
+
+    .formulario__area__campo {
+        padding: 2% 0%;
+    }
+
+    .avancar {
+        width: 30%;
+    }
 }
