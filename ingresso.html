@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/cabecalho-rodape.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/ingressos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
@@ -25,6 +27,26 @@
         <div class="apresentacao__secao">
             <h1 class="apresentacao__secao__titulo">Garanta seu Ingresso</h1>
         </div>
+        <section class="formulario">
+            <h1 class="formulario__titulo">Preencha o formulário a seguir:</h1>
+                <form class="formulario__area">
+                    <label class="formulario__area__titulo" for="nome">Nome Completo:</label>
+                    <input class="formulario__area__campo" type="text" id="nome" name="nome">
+                    <label class="formulario__area__titulo" for="email">Email:</label>
+                    <input class="formulario__area__campo" type="text" id="email" name="email">
+                    <div class="formulario__flex">
+                        <div class="formulario__flex__column">
+                            <label class="formulario__area__titulo" for="tipo">Tipo de Ingresso:</label>
+                            <input class="formulario__area__campo1" type="text" id="tipo" name="tipo">
+                        </div>
+                        <div class="formulario__flex__column">
+                            <label class="formulario__area__titulo" for="nascimento">Data de Nascimento:</label>
+                            <input class="formulario__area__campo1" type="date" id="nascimento" name="nascimento" max="2007-03-11">
+                        </div>
+                    </div>
+                        <a class="avancar" href="ticket.html">Avançar!<span class="material-icons">east</span></a>
+                </form>
+        </section>
     </main>
     <footer class="rodape">
         <nav class="rodape__menu">
