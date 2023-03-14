@@ -27,8 +27,7 @@
 
 .ticket__simbolos {
     display: flex;
-    justify-content: space-around;
-    gap: 580px;
+    justify-content: space-between;
     width: 100%;
     padding-bottom: 3%;
 }
@@ -74,11 +73,10 @@
 
     .ticket {
         width: 70%;
-        padding: 3% 0%;
+        padding: 3%;
     }
 
     .ticket__simbolos {
-        gap: 350px;
         padding-bottom: 8%;
     }
 
