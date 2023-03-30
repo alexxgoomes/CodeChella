@@ -68,12 +68,11 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
-    padding-left: 1.5%;
     box-shadow: 4px 4px var(--cor-sombra);
-    width: 25%;
+    width: 20%;
     height: 56px;
-    text-align: start;
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--cor-secundaria);
@@ -84,6 +83,103 @@
 
 .avancar:hover {
     background-color: var(--cor-hover);
+}
+
+.apresentacao__secao::before {
+    background-image: url("../assets/garanta-ingresso.png");
+    opacity: 40%;
+}
+
+.titulo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding: 3% 0%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.ticket {
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 3%;
+    padding: 1%;
+    width: 40%;
+    background: var(--cor-fundo);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ticket__simbolos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+
+
+.ticket__conteudo {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 48px;
+}
+
+.qrcode {
+    width: 25%;
+}
+
+.ticket__conteudo__informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 35%
+}
+
+.ticket__conteudo__informacoes__titulo {
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+}
+
+.ticket__conteudo__informacoes__subtitulo {
+    color: var(--cor-secundaria);
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: var(--fonte-secundaria);
+}
+
+@media (max-width: 768px){
+    .titulo{
+        padding: 7%;
+    }
+
+    .ticket {
+        width: 70%;
+        padding: 3%;
+    }
+
+    .ticket__simbolos {
+        padding-bottom: 8%;
+    }
+
+    .ticket__conteudo{
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .qrcode {
+        width: 40%;
+    }
+
+    .ticket__conteudo__informacoes__subtitulo {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
