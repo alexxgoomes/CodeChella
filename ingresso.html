@@ -31,38 +31,28 @@
             <h1 class="formulario__titulo">Preencha o formulário a seguir:</h1>
                 <form class="formulario__area" id="formulario">
                     <label class="formulario__area__titulo" for="nome">Nome Completo:</label>
-                    <input class="formulario__area__campo" type="text" id="nome" name="nome">
+                    <input class="formulario__area__campo" type="text" id="nome" name="nome" required>
                     <label class="formulario__area__titulo" for="email">Email:</label>
-                    <input class="formulario__area__campo" type="text" id="email" name="email">
+                    <input class="formulario__area__campo" type="text" id="email" name="email" required>
                     <div class="formulario__flex">
                         <div class="formulario__flex__column">
                             <label class="formulario__area__titulo" for="tipo">Tipo de Ingresso:</label>
-                            <input class="formulario__area__campo1" type="text" id="tipo" name="tipo">
+                            <select name="tipo" id="tipo" class="formulario__area__campo1">
+                                <option value="pista">Pista Comum</option>
+                                <option value="pista-premium">Pista Premium</option>
+                                <option value="cadeiras">Cadeiras Térreo</option>
+                                <option value="cadeiras-superiores">Cadeiras Superiores</option>
+                                <option value="rampas">Rampas</option>
+                            </select>
                         </div>
                         <div class="formulario__flex__column">
                             <label class="formulario__area__titulo" for="nascimento">Data de Nascimento:</label>
                             <input class="formulario__area__campo1" type="date" id="nascimento" name="nascimento" max="2007-03-11">
                         </div>
                     </div>
-                        <a class="avancar" id="botao" >Avançar!<span class="material-icons">east</span></a>
+                        <a class="avancar" id="botao" href="ticket.html">Avançar!<span class="material-icons">east</span></a>
                 </form>
         </section>
-        <section class="ticket" id="ticket">
-            <!-- <div class="ticket__simbolos">
-                <img class="simbolo" src="./assets/Logo1 3.png" alt="logo codechella">
-                <img class="simbolo" src="./assets/Ellipse 4.png" alt="simbolo codechella">
-            </div>
-            <div class="ticket__conteudo">
-                <img class="qrcode" src="./assets/qrcode.png" alt="qrcode">
-                <div class="ticket__conteudo__informacoes">
-                    <h1 class="ticket__conteudo__informacoes__titulo" id="nome-ingresso">Alex Gomes</h1>
-                    <p class="ticket__conteudo__informacoes__subtitulo">Ingresso Cortesia</p>
-                    <p class="ticket__conteudo__informacoes__subtitulo" id="tipo-ingresso">Setor Pista</p>
-                    <p class="ticket__conteudo__informacoes__subtitulo">Data: 11/03/2023</p>
-                    <p class="ticket__conteudo__informacoes__subtitulo">Local: São Paulo-SP</p>
-                </div>
-            </div> -->
-    </section>
     </main>
     <footer class="rodape">
         <nav class="rodape__menu">
@@ -78,6 +68,5 @@
         <p class="rodape__mensagem__texto">Projeto fictício sem fins lucrativos.</p> 
         </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
 </html>
