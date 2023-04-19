@@ -1,11 +1,7 @@
-const nome = document.getElementById("nome");
-const tipo = document.getElementById("tipo");
-const botao = document.getElementById("botao");
-const elementoParaAdicionarNoIngresso = document.getElementById("ticket");
+const informacoesIngresso = window.localStorage.getItem('cadastro');
+const conversao = JSON.parse(informacoesIngresso);
 
-botao.addEventListener('click', () => {
-    colocarNoIngresso();
-})
+const elementoParaAdicionarNoIngresso = document.getElementById('ticket');
 
 function colocarNoIngresso() {
     elementoParaAdicionarNoIngresso.innerHTML = `
@@ -16,12 +12,14 @@ function colocarNoIngresso() {
     <div class="ticket__conteudo">
         <img class="qrcode" src="./assets/qrcode.png" alt="qrcode">
         <div class="ticket__conteudo__informacoes">
-            <h1 class="ticket__conteudo__informacoes__titulo" id="nome-ingresso">${nome.value}</h1>
+            <h1 class="ticket__conteudo__informacoes__titulo" id="nome-ingresso">${conversao.nome}</h1>
             <p class="ticket__conteudo__informacoes__subtitulo">Ingresso Cortesia</p>
-            <p class="ticket__conteudo__informacoes__subtitulo" id="tipo-ingresso">${tipo.value}</p>
+            <p class="ticket__conteudo__informacoes__subtitulo" id="tipo-ingresso">${conversao.tipo}</p>
             <p class="ticket__conteudo__informacoes__subtitulo">Data: 11/03/2023</p>
             <p class="ticket__conteudo__informacoes__subtitulo">Local: São Paulo-SP</p>
         </div>
     </div>
     `
 }
+
+colocarNoIngresso();
