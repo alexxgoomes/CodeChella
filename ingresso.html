@@ -29,32 +29,45 @@
         </div>
         <section class="formulario">
             <h1 class="formulario__titulo">Preencha o formulário a seguir:</h1>
-                <form class="formulario__area" id="formulario">
-                    <label class="formulario__area__titulo" for="nome">Nome Completo:</label>
-                    <input class="formulario__area__campo" type="text" id="nome" name="nome" minlenght="3" required>
-                    <label class="formulario__area__titulo" for="email">Email:</label>
-                    <input class="formulario__area__campo" type="email" id="email" name="email" minlenght="4" required>
-                    <label class="formulario__area__titulo" for="cpf">CPF:</label>
-                    <input class="formulario__area__campo" type="text" id="cpf" name="cpf" minlenght="11" maxlenght="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"  required>
+                <form class="formulario__area" id="formulario" data-formulario>
+                    <fieldset class="formulario__campo">
+                        <label class="formulario__area__titulo" for="nome">Nome Completo:</label>
+                        <input class="formulario__area__campo" type="text" id="nome" name="nome" minlength="3" required/>
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <label class="formulario__area__titulo" for="email">Email:</label>
+                        <input class="formulario__area__campo" type="email" id="email" name="email" minlength="4" required/>
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <label class="formulario__area__titulo" for="cpf">CPF:</label>
+                        <input class="formulario__area__campo" type="text" id="cpf" name="cpf" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"  required/>
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
                     <div class="formulario__flex">
-                        <div class="formulario__flex__column">
+                        <fieldset class="formulario__flex__column">
                             <label class="formulario__area__titulo" for="tipo">Tipo de Ingresso:</label>
                             <select name="tipo" id="tipo" class="formulario__area__campo1">
-                                <option value="pista">Pista Comum</option>
-                                <option value="pista-premium">Pista Premium</option>
-                                <option value="cadeiras">Cadeiras Térreo</option>
-                                <option value="cadeiras-superiores">Cadeiras Superiores</option>
-                                <option value="rampas">Rampas</option>
+                                <option value="Pista Comum">Pista Comum</option>
+                                <option value="Pista Premium">Pista Premium</option>
+                                <option value="Cadeiras Térreo">Cadeiras Térreo</option>
+                                <option value="Cadeiras Superiores">Cadeiras Superiores</option>
+                                <option value="Rampas">Rampas</option>
                             </select>
-                        </div>
-                        <div class="formulario__flex__column">
-                            <label class="formulario__area__titulo" for="nascimento">Data de Nascimento:</label>
-                            <input class="formulario__area__campo1" type="date" id="nascimento" name="nascimento" required>
-                        </div>
+                        </fieldset>
+                        <fieldset class="formulario__flex__column">
+                            <label class="formulario__area__titulo" for="aniversario">Data de Nascimento:</label>
+                            <input class="formulario__area__campo1" type="date" id="aniversario" name="aniversario" required/>
+                            <span class="mensagem-erro"></span>
+                        </fieldset>
                     </div>
-                    <a href="ticket.html" class="avancar-ancora">
-                        <input type="submit" class="avancar" id="botao" value="Avançar!">
-                    </a>
+                    <fieldset class="formulario__submit">
+                        <a href="ticket.html" class="avancar-ancora">
+                            <input type="submit" class="avancar" id="botao" data-botao value="Avançar!"/>
+                        </a>
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
                 </form>
         </section>
     </main>
@@ -73,5 +86,6 @@
         </div>
     </footer>
     <script src="./js/script.js" type="module"></script>
+    <script src="./js/ingresso.js"></script>
 </body>
 </html>
