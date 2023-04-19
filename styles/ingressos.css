@@ -29,6 +29,19 @@
     gap: 32px;
 }
 
+.formulario__campo {
+    border: none;
+    width: 100%;
+}
+
+.formulario__submit {
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .formulario__area__titulo {
     width: 100%;
     font-size: 2rem;
@@ -43,6 +56,11 @@
     border-style: none;
 }
 
+.mensagem-erro {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
 .formulario__flex {
     display: flex;
     justify-content: center;
@@ -52,6 +70,7 @@
 }
 
 .formulario__flex__column {
+    border: none;
     display: flex;
     flex-direction: column;
     width: 100%;
