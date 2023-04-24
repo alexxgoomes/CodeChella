@@ -53,7 +53,7 @@ const mensagens = {
     aniversario: {
         valueMissing: 'O campo de data de nascimento não pode estar vazio.',
         customError: 'Você deve ser maior que 16 anos para se cadastrar.'
-    }
+    },
 };
 
 function verificaCampo(campo) {
