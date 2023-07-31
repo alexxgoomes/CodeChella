@@ -1,5 +1,5 @@
 <div id='top'>
-  <a href="https://alexxgoomes-github-io.vercel.app/index.html"><img class="cabecalho__logo" src="https://s3-alpha-sig.figma.com/img/6f3d/b209/005c1eb2c93cef45a4e9239f44a2d5f2?Expires=1683504000&Signature=HwEYSwOfdYh9NzUt1AUCmAF-UyV~iBDyfeydPAJLtVD2r8yOC9p8FUpWwmMWdTfu5ey2aIP14-kx~n-TqgCygryCrdeglANfgyHY76~y9wdYuQGuRdXe9S6YTlyqhj-JdYDQLUmMOGbqLZzQyziFPwNABNJEnEf8QRRAesEser~rzzd8Ow8V-WjIJFX-rozTTatz9Ufn28pwc9~Lm7BOx3Qa8IwczZwLqSP0iTvXcj89-gsbkOILsh81P3rf4zi5P8xxbkRVV6ruGAUGlqOGsaHMNNNCH12bkf~hdU4dICY6DUYA3lEIdXZcLRWhAJpJYUG5ekmiY7q2nvUN3P9E9A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"></a>
+  <a href="https://alexxgoomes-github-io.vercel.app/index.html"><img class="cabecalho__logo" src="https://alexxgoomes-github-io.vercel.app/assets/Logo1%201.png"></a>
 
   <h1>6º Challenge Front-end Alura</h1>
 </div>
